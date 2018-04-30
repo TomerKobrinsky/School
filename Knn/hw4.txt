@@ -1,0 +1,79 @@
+Cross validation error with K = 4, p = One, majority function = Weighted for glass data is: 0.2577922077922078
+Cross validation error with K = 17, p = One, majority function = Weighted for cancer data is: 0.2658866995073892
+The average Precision for the cancer dataset is: 0.5750000000000001
+The average Recall for the cancer dataset is: 0.342542735042735
+----------------------------
+Results for 214 folds
+----------------------------
+Cross validation error of None-Edited knn on glass dataset is 0.27102803738317754 and the average elapsed time is 1829572.7242990655
+The total elapsed time is: 391528563
+The total number of instances used in the classification phase is: 45582
+Cross validation error of Forwards-Edited knn on glass dataset is 0.2897196261682243 and the average elapsed time is 646809.3457943925
+The total elapsed time is: 138417200
+The total number of instances used in the classification phase is: 18070
+Cross validation error of Backwards-Edited knn on glass dataset is 0.29906542056074764 and the average elapsed time is 564386.0186915888
+The total elapsed time is: 120778608
+The total number of instances used in the classification phase is: 16198
+----------------------------
+Results for 50 folds
+----------------------------
+Cross validation error of None-Edited knn on glass dataset is 0.257 and the average elapsed time is 6594331.26
+The total elapsed time is: 329716563
+The total number of instances used in the classification phase is: 10486
+Cross validation error of Forwards-Edited knn on glass dataset is 0.299 and the average elapsed time is 2525291.18
+The total elapsed time is: 126264559
+The total number of instances used in the classification phase is: 4017
+Cross validation error of Backwards-Edited knn on glass dataset is 0.35 and the average elapsed time is 2254242.36
+The total elapsed time is: 112712118
+The total number of instances used in the classification phase is: 3577
+----------------------------
+Results for 10 folds
+----------------------------
+Cross validation error of None-Edited knn on glass dataset is 0.26233766233766237 and the average elapsed time is 3.00667497E7
+The total elapsed time is: 300667497
+The total number of instances used in the classification phase is: 1926
+Cross validation error of Forwards-Edited knn on glass dataset is 0.3363636363636363 and the average elapsed time is 1.2429274E7
+The total elapsed time is: 124292740
+The total number of instances used in the classification phase is: 780
+Cross validation error of Backwards-Edited knn on glass dataset is 0.33268398268398264 and the average elapsed time is 1.0939694E7
+The total elapsed time is: 109396940
+The total number of instances used in the classification phase is: 695
+----------------------------
+Results for 5 folds
+----------------------------
+Cross validation error of None-Edited knn on glass dataset is 0.28028792912513845 and the average elapsed time is 5.3451271E7
+The total elapsed time is: 267256355
+The total number of instances used in the classification phase is: 856
+Cross validation error of Forwards-Edited knn on glass dataset is 0.35481727574750827 and the average elapsed time is 2.27417764E7
+The total elapsed time is: 113708882
+The total number of instances used in the classification phase is: 359
+Cross validation error of Backwards-Edited knn on glass dataset is 0.3781838316722038 and the average elapsed time is 2.02439842E7
+The total elapsed time is: 101219921
+The total number of instances used in the classification phase is: 322
+----------------------------
+Results for 3 folds
+----------------------------
+Cross validation error of None-Edited knn on glass dataset is 0.28547209181011995 and the average elapsed time is 7.358514433333333E7
+The total elapsed time is: 220755433
+The total number of instances used in the classification phase is: 428
+Cross validation error of Forwards-Edited knn on glass dataset is 0.35517736045905063 and the average elapsed time is 3.2280158666666668E7
+The total elapsed time is: 96840476
+The total number of instances used in the classification phase is: 189
+Cross validation error of Backwards-Edited knn on glass dataset is 0.3273343766301513 and the average elapsed time is 3.1061935E7
+The total elapsed time is: 93185805
+The total number of instances used in the classification phase is: 178
+
+1. In general, as the number of folds decreases:
+   - The average elapsed time of the classification of 1 fold in the cross validation increases,
+   because in each fold there are more instances.
+   - The total elapsed time for the classification in the cross validation decreases.
+   The above is correct referring to the non-edited KNN,
+   since pruning the data means that we decrease the number
+   of instances that are being used for classification.
+
+2. There is a connection between our answer for the first question to
+   the number of instances that we used in the classification.
+   We can see from the printed results that as the number of folds decreases,
+   the number of instances used in the classification phase also decreases.
+   Therefore, the total elapsed time for the classification in the cross
+   validation decreases, because we are making less classifications.

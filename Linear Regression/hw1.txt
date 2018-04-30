@@ -1,0 +1,11 @@
+The weights are: 0.9825737615884744, 0.019112709885263916, 0.08620161269920601, 5.078774486451034E-4, -0.03960386306462346, -0.17137636692349392, -0.10023012725423716, 0.17196467903176463, -0.18006590212700274, 0.00935424333762588, 0.2434463691134125, 0.006851870109868652, 0.32698904916608557, 0.5312236394695614, 0.3451729599635653
+
+The error is: 5.60299495108162
+
+How we decided to stop iterating: 
+
+For every 100 iterations we checked the current error and compared it to the error we calculated 100 iterations ago. If the difference between the errors was smaller than 0.003, then we stopped since it's a minor error, otherwise we continued.
+
+How we chose our alpha:
+
+We created a for loop with a variable i which goes from -17 up to 2. We set alpha to 3^i and ran gradient descent with this value with 20,000 iterations. For each alpha we calculated the error on the training data. The alpha which gave us the lowest error, was the one we chose.

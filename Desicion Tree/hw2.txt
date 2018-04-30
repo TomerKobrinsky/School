@@ -1,0 +1,24 @@
+Decision Tree with No pruning 
+The average train error of the decision tree is 0.2864864864864865
+The average test error of the decision tree is 0.32
+The amount of rules generated from the tree 57
+Decision Tree with Chi pruning 
+The average train error of the decision tree with Chi pruning is 0.7135135135135136
+The average test error of the decision tree Chi pruning is 0.68
+The amount of rules generated from the tree 5
+Decision Tree with Rule pruning 
+The average train error of the decision tree with Rule pruning is 0.34054054054054056
+The average test error of the decision tree Rule pruning is 0.32
+The amount of rules generated from the tree 14
+
+
+We are not satisfied with some of our results:
+
+1. Chi Pruning:
+  - First of all we can see that when building the classifier with pre
+    pruning of Chi Sqaure Test, the classifier is much worse than flipping a coin...
+  - Also, it doesn't make sense that pruning gives us a larger avg error than no pruning.
+  - In addition, the number of rules (5) in this iteration is quite odd.
+
+2. Rule Pruning - It doesn't make sense that pruning gives us a larger avg error than no pruning.
+
